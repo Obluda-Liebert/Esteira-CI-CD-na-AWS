@@ -68,6 +68,18 @@ def create_app(test_config=None):
             return jsonify(error="tarefa nao encontrada"), 404
         return jsonify(id=task_id, done=data["done"]), 200
 
+# -------------------------------------------------------------------------- DELETE ---------------------------------------------------------------
+    @app.delete("/tasks/<int:task_id>")
+    def delete_task(task_id):
+        with connect() as db:
+            cursor = db.execute("DELETE FROM tasks WHERE id=?", (task_id,))
+            db.commit()
+        if not cursor.rowcount:
+            return jsonify(error="tarefa nao encontrada"), 404
+        return "", 204
+
+# ----------------------------------------------------------- TASK ADICIONAL (Filtro por status) ---------------------------------------------------
+    
     return app
 
 
