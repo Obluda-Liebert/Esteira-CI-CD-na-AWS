@@ -18,11 +18,11 @@ Este repositório contém a implementação de uma API em Flask (SQLite) com tes
    └────────┬────────┘          │
             │                   ▼
             │        ┌──────────────────────┐
-            │        │ GHCR Image Registry│
+            │        │ GHCR Image Registry  │
             │        └──────────────────────┘
             ▼
  ┌───────────────────────┐
- │ AWS EC2 (Deploy SSH)│ ──► Docker Pull & Run
+ │ AWS EC2 (Deploy SSH)  │ ──► Docker Pull & Run
  └──────────┬────────────┘
             │
             ▼
