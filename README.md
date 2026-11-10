@@ -130,4 +130,4 @@ A persistência do banco de dados SQLite é garantida através de um **Docker Vo
 
 * **Run do Workflow de CD (Sucesso):** `https://github.com/Obluda-Liebert/Esteira-de-CI-CD-para-API-na-AWS/actions/runs/000000002`
 
-* **URL / HealthCheck da Aplicação:** `http://<IP_PUBLICO_EC2>/health`
+* **URL / HealthCheck da Aplicação:** `http://98.81.142.35/health`
