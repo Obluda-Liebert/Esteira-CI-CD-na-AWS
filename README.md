@@ -1,6 +1,8 @@
-# VPC Peering Inter-Contas AWS & Laboratório de Computação em Nuvem
+## Integrante
+* **Luiz Felipe Campos da Silva** — Matrícula: `22310854`
+* # VPC Peering Inter-Contas AWS & Laboratório de Computação em Nuvem
 
-## 📌 Descrição do Projeto
+## Descrição do Projeto
 Este repositório documenta a implementação de uma arquitetura de rede privada utilizando **VPC Peering entre duas contas distintas da AWS** (Conta A: Requester e Conta B: Accepter), permitindo comunicação segura e de baixa latência entre instâncias EC2 sem tráfego exposto à Internet.
 
 ---
@@ -37,7 +39,7 @@ flowchart TD
 
 ---
 
-## 🛠️ Infraestrutura & Mapeamento de Portas
+## Infraestrutura & Mapeamento de Portas
 
 ### Tabela de Ativos e Mapeamento
 
@@ -61,7 +63,7 @@ flowchart TD
 
 ---
 
-## 💰 Registro de Recursos e Custos Estimados
+## Registro de Recursos e Custos Estimados
 
 | Recurso | Quantidade / Configuração | Custo Estimado (Free Tier / Learner Lab) |
 | :--- | :--- | :--- |
@@ -71,7 +73,7 @@ flowchart TD
 
 ---
 
-## 🚨 Dificuldades Encontradas & Soluções
+## Dificuldades Encontradas & Soluções
 
 1. **Roteamento Bidirecional Pendente:**
    * *Desafio:* O peering foi estabelecido com status `Active`, mas os pings não alcançavam a instância de destino.
@@ -85,7 +87,7 @@ flowchart TD
 
 ---
 
-## 🔍 Evidências da Persistência e Validação
+## Evidências da Persistência e Validação
 
 1. **Identificador da Conexão Peering:** `pcx-07fee17ea3d63aa57` (Status: `Active`).
 2. **Atualização da Tabela de Rotas VPC-A:** `rtb-0e8598223eeeab3f2` com destino `10.10.0.0/27` e alvo `pcx-07fee17ea3d63aa57`.
@@ -94,6 +96,3 @@ flowchart TD
 
 ---
 
-## 👥 Integrantes
-* **Luiz Felipe Campos da Silva** — Matrícula: `22310854`
-* **Isabella Campos Bueno** — Matrícula: `22307795`
